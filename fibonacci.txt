@@ -1,0 +1,36 @@
+fibonacciGenerator(9);
+
+function fibonacciGenerator(n){
+
+
+var firstArray = [];
+var secondArray = [];
+var limit = n - 2;
+var calculation = 0;
+var m = 0;
+var o = 1;
+
+
+ for (var j = 0; j < 2; j++ ){
+    
+  firstArray.push(j);
+       
+ }
+ 
+ for (var k = 0; k < limit; k++){
+
+calculation = firstArray[m] + firstArray[o]; 
+firstArray.push(calculation);
+m++;
+o++;
+ }
+
+for (var h = 0; h < n; h++){
+
+    secondArray.push(firstArray[h]); 
+}
+
+
+return secondArray;
+ 
+    

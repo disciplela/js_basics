@@ -1,0 +1,14 @@
+var numberOfBottles = 99;
+
+while (numberOfBottles > 0){
+
+    console.log(numberOfBottles + " bottles of beer on the wall, " + numberOfBottles + " bottles of beer.");
+    console.log("You take one down and pass it around,");
+    numberOfBottles--;
+    if (numberOfBottles <= 1){
+    console.log("One bottle of beer on the wall, one bottle of beer. You take one down and pass it around.");
+    numberOfBottles = 0;
+    }
+    console.log(numberOfBottles + " bottles of beer on the wall.");
+    
+}
